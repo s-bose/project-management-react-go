@@ -11,7 +11,7 @@ import (
 )
 
 type Database struct {
-	db *gorm.DB
+	Db *gorm.DB
 }
 
 func (d *Database) ConnectDatabase() {
@@ -30,7 +30,7 @@ func (d *Database) ConnectDatabase() {
 	}
 
 	log.Println("Connected to database")
-	d.db = database
+	d.Db = database
 }
 
 // add newly defined models here
